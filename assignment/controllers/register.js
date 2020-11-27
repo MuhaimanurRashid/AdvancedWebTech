@@ -25,6 +25,7 @@ router.post('/',(req,res)=>{
         if(status){
     
             console.log("Created");
+            res.redirect('/home');
             
         }
         else{

@@ -16,4 +16,13 @@ router.get('/', (req, res)=>{
 	res.render('home/mhome');	
 })
 
+router.get('/carlist1', (req, res)=>{
+
+	userModel.getAll2(function(results)
+	{
+					 res.render('mhome/carlist', {users: results});
+		});
+	})
+module.exports = router;
+
 module.exports = router;

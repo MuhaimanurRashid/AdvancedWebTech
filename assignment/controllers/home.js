@@ -22,7 +22,7 @@ router.get('/userlist', (req, res)=>{
 					 res.render('home/userlist', {users: results});
 		});
 	})
-router.get('/booklist', (req, res)=>{
+router.get('/carlist', (req, res)=>{
 
 		userModel.getAll2(function(results)
 		{

@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,11 +6,11 @@
 <body>
 	<h1>Car List</h1>
 
-	<a href="/home">Back</a> | 
+	<a href="/mhome">Back</a> | 
 	<a href="/logout">logout</a> 
 	<br>
 
-	<table border="2">
+	<table border="1">
 		<tr>
 			<td>ID</td>
 			<td>Car Name</td>
@@ -31,9 +30,6 @@
                 <td><%= std.price %></td>
                 <td><%= std.description %></td>
                
-				<td>
-					<a href="/user/edit/<%= std.id %>">Edit</a>
-				</td>
 			</tr>
 		<%
 			}); 
